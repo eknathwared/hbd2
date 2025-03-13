@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Bestie! 🎂🎈</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Why You're My Best Friend! 🎂💖</h1>
+
+        <div class="reasons">
+            <div class="reason hidden">🎈 You bring so much happiness & laughter into my life! 😊🎊</div>
+            <div class="reason hidden">🎁 Life without you would be like a birthday cake without candles! 🎂✨</div>
+            <div class="reason hidden">😂 Our crazy jokes & fun moments are the best gift ever! 🤣🎶</div>
+            <div class="reason hidden">🌟 You are the brightest star in my life, today & forever! 💫💖</div>
+        </div>
+
+        <button id="revealBtn">Unwrap Your Surprise 🎁</button>
+    </div>
+
+    <script>
+        let index = 0;
+        const reasons = document.querySelectorAll('.reason');
+        const button = document.getElementById("revealBtn");
+
+        button.addEventListener("click", function() {
+            if (index < reasons.length) {
+                reasons[index].classList.add("show");
+                index++;
+            } else {
+                button.innerText = "🎂 View Our Beautiful Journey 🎈";
+                button.onclick = function() {
+                    window.location.href = "gallery.html";
+                };
+            }
+        });
+    </script>
+</body>
+</html>
