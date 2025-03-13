@@ -302,3 +302,22 @@ button:hover {
     background: #ffcc00;
     color: #000;
 }
+@media (max-width:800px) {
+    body{
+        background-color: red;
+        
+    }
+    .memories{
+        min-width: 80vw;
+    }
+    .memories h2{
+        font-size: 22px;
+    }
+    .message{
+        font-size: 16px;
+        /* line-height: 1.5%; */
+    }
+    .birthday-graphics{
+        font-size: 24px;
+    }
+}
